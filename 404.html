@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="asset/img/icon.png">
+    <title>404 Page Not Found - OnlineFileConv</title>
+    <meta name="description"
+        content="Oops! The page you're looking for doesn't exist. Return to OnlineFileConv to use free online tools" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Outfit", sans-serif;
+        }
+
+        :root {
+            --primary: #2D4356;
+            --primary-dark: #162b3d;
+            --primary-light: #3d5264;
+            --accent: #ff6b35;
+            --light: #ffffff;
+            --dark: #2b2b2b;
+            --gray: #6c757d;
+            --light-bg: #f4f6f8;
+            --card-shadow: 0 5px 20px rgba(36, 42, 54, 0.15);
+            --gradient-blue: linear-gradient(135deg, #2D4356, #162b3d);
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0f5ff, #e6f0ff);
+            color: var(--dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        .header {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 1.2rem 20rem;
+            /*2rem*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo i {
+            font-size: 2.2rem;
+            color: var(--accent);
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 0.8rem;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: white;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        /* Tool Hero Section */
+        .tool-hero {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center bottom;
+            opacity: 0.7;
+        }
+
+        .tool-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tool-title {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .tool-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Converter Section */
+        .converter-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .converter-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .converter-header {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .converter-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .converter-header p {
+            opacity: 0.9;
+        }
+
+        .converter-body {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .upload-section {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Upload Area */
+        .upload-area {
+            border: 2px dashed #d0dbf0;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            background: var(--light-bg);
+            cursor: pointer;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .upload-area:hover,
+        .upload-area.drag-over {
+            border-color: var(--primary);
+            background: rgba(11, 61, 145, 0.05);
+        }
+
+        .upload-icon {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .upload-text {
+            margin-bottom: 1rem;
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        .upload-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .upload-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(11, 61, 145, 0.3);
+        }
+
+        /* Preview Area */
+        .preview-area {
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+
+        .preview-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preview-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .preview-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            height: 120px;
+        }
+
+        .preview-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .preview-item .remove-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: rgba(255, 0, 0, 0.7);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        /* Button Container */
+        .button-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .reset-btn {
+            background: #e0e6f3;
+            color: var(--primary);
+        }
+
+        .reset-btn:hover {
+            background: #d0dbf0;
+            transform: translateY(-3px);
+        }
+
+        .convert-btn {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .convert-btn:hover {
+            background: #e55a2a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .convert-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Status Message */
+        .status-message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            display: none;
+        }
+
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+
+        /* Tools Grid Section */
+        .tools-grid-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 8px;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border: 1px solid #eaeaea;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(11, 61, 145, 0.2);
+            border-color: var(--primary-light);
+        }
+
+        .tool-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--light-bg);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .tool-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* New tool card colors */
+        .tool-card:nth-child(1) .tool-icon {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            color: white;
+        }
+
+        .tool-card:nth-child(2) .tool-icon {
+            background: linear-gradient(135deg, #4ECDC4, #45B7D1);
+            color: white;
+        }
+
+        .tool-card:nth-child(3) .tool-icon {
+            background: linear-gradient(135deg, #FFD166, #FF9E6D);
+            color: white;
+        }
+
+        .tool-card:nth-child(4) .tool-icon {
+            background: linear-gradient(135deg, #9C89B8, #A2D2FF);
+            color: white;
+        }
+
+        .tool-card:nth-child(5) .tool-icon {
+            background: linear-gradient(135deg, #7FC97F, #B8E0D2);
+            color: white;
+        }
+
+        .tool-card:nth-child(6) .tool-icon {
+            background: linear-gradient(135deg, #F78FB3, #FF9AA2);
+            color: white;
+        }
+
+        .tool-card:nth-child(7) .tool-icon {
+            background: linear-gradient(135deg, #9179F0, #C7CEEA);
+            color: white;
+        }
+
+        .tool-card:nth-child(8) .tool-icon {
+            background: linear-gradient(135deg, #FFA07A, #FFDAC1);
+            color: white;
+        }
+
+        .tool-card:nth-child(9) .tool-icon {
+            background: linear-gradient(135deg, #45B7D1, #98D8C8);
+            color: white;
+        }
+
+        .tool-card:nth-child(10) .tool-icon {
+            background: linear-gradient(135deg, #FFD166, #FF9E6D);
+            color: white;
+        }
+
+        /* Article Section */
+        .article-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 20px;
+        }
+
+        .article-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .article-content {
+            padding: 2rem;
+        }
+
+        .article-content h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-bg);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .article-content ul {
+            margin: 1.5rem 0 1.5rem 2rem;
+        }
+
+        .article-content li {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .article-tip {
+            background: #e6f0ff;
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .article-content .keyword-highlight {
+            background-color: #e6f0ff;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+            /* border-radius: 3px; */
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .footer-links a i {
+            font-size: 0.9rem;
+            color: var(--accent);
+            width: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .tools-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .header {
+                flex-direction: row;
+                gap: 1rem;
+                padding: 1.2rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: var(--primary-dark);
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 0;
+                gap: 1.5rem;
+                transform: translateY(-150%);
+                transition: transform 0.4s ease;
+                z-index: 999;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .tool-title {
+                font-size: 2.2rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .converter-body {
+                padding: 1.5rem;
+            }
+
+            .tool-title {
+                font-size: 2rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .logo-text {
+                font-size: 1.5rem;
+            }
+
+            .tool-title {
+                font-size: 1.8rem;
+            }
+
+            .tool-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .action-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img style="width: 40px; height: 40px;" src="asset/img/icon.png" alt="OnlineFileConv logo-text" srcset="">
+            <div class="logo-text">OnlineFileConv</div>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="/" class="nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </nav>
+    </header>
+
+    <!-- Tools Grid Section -->
+    <section class="tools-grid-section">
+        <div class="section-header">
+            <h1>404 - Page Not Found</h1>
+            <p>
+                Sorry, the page you’re looking for doesn’t exist or may have been moved.<br>
+                You can go back to the homepage and continue using our free PDF tools.
+            </p>
+            <a href="/">← Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>OnlineFileConv</h3>
+                <p>OnlineFileConv is a fast and free file conversion website that lets you convert documents, images,
+                    videos, and audio files into any format instantly.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Social Links</h3>
+                <ul class="footer-links">
+                    <li><a href="https://x.com/"><i class="fas fa-chevron-right"></i>
+                            Twitter</a></li>
+                    <li><a href="https://github.com/"><i class="fas fa-chevron-right"></i> Github</a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fas fa-chevron-right"></i> Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="page/about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="page/privacy"><i class="fas fa-chevron-right"></i> Privacy
+                            Policy</a></li>
+                    <li><a href="page/disclaimer"><i class="fas fa-chevron-right"></i> Disclaimer</a>
+                    </li>
+                    <li><a href="page/terms"><i class="fas fa-chevron-right"></i> Terms
+                            & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 OnlineFileConv | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        // Mobile menu toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target) && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+    </script>
+</body>
+
+</html>
