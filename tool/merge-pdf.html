@@ -968,21 +968,21 @@
                             <div class="progress-bar" id="progressBar"></div>
                         </div>
 
-                        <div class="button-container">
-                            <button class="action-btn reset-btn" id="resetBtn">
-                                <i class="fas fa-redo"></i> Reset
-                            </button>
-                            <button class="action-btn merge-btn" id="mergeBtn" disabled>
-                                <i class="fas fa-object-group"></i> Merge PDFs
-                            </button>
-                            <button class="action-btn download-btn" id="downloadBtn">
-                                <i class="fas fa-download"></i> Download Merged PDF
-                            </button>
-                        </div>
-
-                        <div class="status-message status-info" id="statusMessage">
-                            Upload PDF files to begin merging
-                        </div>
+                        
+                    </div>
+                    <div class="button-container">
+                        <button class="action-btn reset-btn" id="resetBtn">
+                            <i class="fas fa-redo"></i> Reset
+                        </button>
+                        <button class="action-btn merge-btn" id="mergeBtn" >
+                            <i class="fas fa-object-group"></i> Merge PDFs
+                        </button>
+                        <!-- <button class="action-btn download-btn" id="downloadBtn">
+                            <i class="fas fa-download"></i> Download Merged PDF
+                        </button> -->
+                    </div>
+                    <div class="status-message status-info" id="statusMessage">
+                        Upload PDF files to begin merging
                     </div>
                 </div>
             </div>
@@ -1473,7 +1473,7 @@
             if (pdfFiles.length === 0) {
                 filesList.style.display = 'none';
                 mergeBtn.disabled = true;
-                downloadBtn.style.display = 'none';
+                // downloadBtn.style.display = 'none';
                 showStatus('Upload PDF files to begin merging', 'info');
             } else {
                 showStatus('File removed', 'success');
@@ -1587,23 +1587,14 @@
                 mergedPdf = new Blob([mergedPdfBytes], { type: 'application/pdf' });
 
                 // Enable download
-                downloadBtn.style.display = 'inline-flex';
+                // downloadBtn.style.display = 'inline-flex';
 
                 // Show success message
-                showStatus('PDF files merged successfully! Click "Download" to save your merged document.', 'success');
-            } catch (error) {
-                console.error('Merging error:', error);
-                showStatus(`Failed to merge PDFs: ${error.message}`, 'error');
-            } finally {
-                mergeBtn.disabled = false;
-                mergeBtn.innerHTML = '<i class="fas fa-object-group"></i> Merge PDFs';
-                progressContainer.style.display = 'none';
-            }
-        });
+                showStatus('PDF files merged successfully!', 'success');
 
-        // Download merged PDF
-        downloadBtn.addEventListener('click', () => {
-            if (!mergedPdf) {
+                // Custom code for auto download
+
+                if (!mergedPdf) {
                 showStatus('Please merge PDFs first', 'error');
                 return;
             }
@@ -1616,7 +1607,32 @@
             link.click();
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error('Merging error:', error);
+                showStatus(`Failed to merge PDFs: ${error.message}`, 'error');
+            } finally {
+                mergeBtn.disabled = false;
+                mergeBtn.innerHTML = '<i class="fas fa-object-group"></i> Merge PDFs';
+                progressContainer.style.display = 'none';
+            }
         });
+
+        // Download merged PDF
+        // downloadBtn.addEventListener('click', () => {
+        //     if (!mergedPdf) {
+        //         showStatus('Please merge PDFs first', 'error');
+        //         return;
+        //     }
+
+        //     const url = URL.createObjectURL(mergedPdf);
+        //     const link = document.createElement('a');
+        //     link.href = url;
+        //     link.download = 'merged-document.pdf';
+        //     document.body.appendChild(link);
+        //     link.click();
+        //     document.body.removeChild(link);
+        //     URL.revokeObjectURL(url);
+        // });
 
         // Reset button
         resetBtn.addEventListener('click', () => {
@@ -1625,9 +1641,9 @@
             selectedFile = null;
 
             filesList.style.display = 'none';
-            downloadBtn.style.display = 'none';
+            // downloadBtn.style.display = 'none';
             progressContainer.style.display = 'none';
-            mergeBtn.disabled = true;
+            // mergeBtn.disabled = true;
 
             showStatus('Upload PDF files to begin merging', 'info');
         });
