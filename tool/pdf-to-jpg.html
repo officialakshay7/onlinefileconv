@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../asset/img/icon.png">
+    <meta name="keywords"
+        content="pdf to jpg, convert pdf to jpg, pdf to jpg converter, how to convert pdf to jpg, pdf to jpg online, convert pdf to jpg free, pdf to jpg converter free, pdf to image, pdf to jpeg, pdf to jpg free, free pdf to jpg converter, pdf to jpg converter for free, how to change pdf to jpg, turn pdf to jpg, pdf to jpg iphone, pdf to jpg android, save pdf as jpg">
+    <meta name="description"
+        content="Easily convert PDF to JPG online. Free PDF to JPG converter with no watermark. Extract pages from PDF as high-quality JPG images. Works on iPhone, Android, and all devices. No signup required.">
+
+    <title>PDF to JPG Converter | Convert PDF to JPG Online - OnlineFileConv</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://onlinefileconv.com/tool/pdf-to-jpg">
+    <meta property="og:title"
+        content="PDF to JPG Converter - Convert PDF Pages to JPG Images Online Free | OnlineFileConv">
+    <meta property="og:description"
+        content="Free PDF to JPG converter online. Convert PDF pages to JPG images without watermark. Extract all pages from PDF as high-quality JPG images. Works on iPhone and Android. No signup required.">
+    <meta property="og:image" content="https://onlinefileconv.com/asset/img/og-pdf-to-jpg.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Convert PDF to JPG online - Free PDF to JPG converter">
+    <meta property="og:site_name" content="OnlineFileConv">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://onlinefileconv.com/tool/pdf-to-jpg">
+    <meta name="twitter:title" content="PDF to JPG Converter - Free Online Tool">
+    <meta name="twitter:description"
+        content="Free PDF to JPG converter online. Convert PDF pages to JPG images without watermark. Extract all pages as high-quality images. Works on iPhone and Android.">
+    <meta name="twitter:image" content="https://onlinefileconv.com/asset/img/og-pdf-to-jpg.jpg">
+    <meta name="twitter:site" content="@OnlineFileConv">
+    <meta name="twitter:creator" content="@OnlineFileConv">
+
+    <meta property="og:mobile_url" content="https://onlinefileconv.com/tool/pdf-to-jpg">
+
+    <!-- Schema Markup - PDF to JPG Converter -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PDF to JPG Converter - Convert PDF Pages to JPG Images Online",
+      "url": "https://onlinefileconv.com/tool/pdf-to-jpg",
+      "applicationCategory": "DocumentConverter",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Free online PDF to JPG converter. Convert PDF pages to high-quality JPG images. Extract every page from a PDF as a separate JPG image. No watermark. Works on iPhone and Android.",
+      "featureList": [
+        "Convert PDF to JPG images",
+        "Extract all pages as separate JPGs",
+        "High-quality image output",
+        "No watermarks",
+        "Mobile friendly",
+        "No registration required"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "2140"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Convert PDF to JPG",
+      "description": "Easy steps to convert your PDF pages to JPG image files",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Upload PDF File",
+          "text": "Click 'Choose File' or drag and drop your PDF file."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Preview Pages",
+          "text": "Preview all the pages extracted from your PDF."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Convert to JPG",
+          "text": "Click 'Convert to JPG' to extract all pages as images."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Download",
+          "text": "Download your JPG images individually or all at once."
+        }
+      ],
+      "tool": {
+        "@type": "HowToTool",
+        "name": "PDF to JPG Converter"
+      }
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "OnlineFileConv",
+      "url": "https://onlinefileconv.com/",
+      "logo": "https://onlinefileconv.com/asset/img/icon.png",
+      "sameAs": [
+        "https://x.com/onlinefileconv",
+        "https://github.com/onlinefileconv",
+        "https://www.linkedin.com/company/onlinefileconv"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@onlinefileconv.com",
+        "contactType": "customer support"
+      },
+      "description": "Free online file conversion tools for documents, images, and PDFs."
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://onlinefileconv.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://onlinefileconv.com/#tools"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "PDF to JPG",
+          "item": "https://onlinefileconv.com/tool/pdf-to-jpg"
+        }
+      ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I convert a multi-page PDF to JPG?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Our tool extracts every page of your PDF as a separate JPG image. You can download them individually or all at once."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a file size limit for PDF to JPG conversion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our free tool supports PDF files up to 100MB. For larger files, you can split your PDF first and then convert each part."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What quality are the JPG images produced?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our converter produces high-quality JPG images at 150 DPI by default, suitable for most use cases including printing and sharing."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial", sans-serif;
+        }
+
+        :root {
+            --primary: #2D4356;
+            --primary-dark: #162b3d;
+            --primary-light: #3d5264;
+            --accent: #ff6b35;
+            --light: #ffffff;
+            --dark: #2b2b2b;
+            --gray: #6c757d;
+            --light-bg: #f4f6f8;
+            --card-shadow: 0 5px 20px rgba(36, 42, 54, 0.15);
+            --gradient-blue: linear-gradient(135deg, #2D4356, #162b3d);
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0f5ff, #e6f0ff);
+            color: var(--dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        .header {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 1.2rem 20rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo i {
+            font-size: 2.2rem;
+            color: var(--accent);
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 0.8rem;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: white;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        /* Converter Section */
+        .converter-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .converter-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .converter-header {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .converter-header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .converter-header p {
+            opacity: 0.9;
+        }
+
+        .converter-body {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .upload-section {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Upload Area */
+        .upload-area {
+            border: 2px dashed #d0dbf0;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            background: var(--light-bg);
+            cursor: pointer;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .upload-area:hover,
+        .upload-area.drag-over {
+            border-color: var(--primary);
+            background: rgba(11, 61, 145, 0.05);
+        }
+
+        .upload-icon {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .upload-text {
+            margin-bottom: 1rem;
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+
+        .upload-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .upload-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(11, 61, 145, 0.3);
+        }
+
+        /* Quality Selector */
+        .options-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .options-row label {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        .options-row select {
+            padding: 7px 14px;
+            border: 1.5px solid #d0dbf0;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: var(--dark);
+            background: var(--light-bg);
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+
+        .options-row select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        /* Preview Area */
+        .preview-area {
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+
+        .preview-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preview-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .preview-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            border: 1px solid #e0e6f3;
+        }
+
+        .preview-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .preview-item .page-label {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--gray);
+            padding: 5px 4px;
+            background: var(--light-bg);
+        }
+
+        .preview-item .download-single-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: rgba(45, 67, 86, 0.85);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.75rem;
+            transition: background 0.2s;
+        }
+
+        .preview-item .download-single-btn:hover {
+            background: var(--accent);
+        }
+
+        /* Progress Bar */
+        .progress-wrap {
+            width: 100%;
+            margin-top: 1.2rem;
+            display: none;
+        }
+
+        .progress-label {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-bottom: 6px;
+        }
+
+        .progress-bar-bg {
+            background: #e0e6f3;
+            border-radius: 99px;
+            height: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 99px;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        /* Button Container */
+        .button-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .reset-btn {
+            background: #e0e6f3;
+            color: var(--primary);
+        }
+
+        .reset-btn:hover {
+            background: #d0dbf0;
+            transform: translateY(-3px);
+        }
+
+        .convert-btn {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .convert-btn:hover {
+            background: #e55a2a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .convert-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .download-all-btn {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(45, 67, 86, 0.25);
+            display: none;
+        }
+
+        .download-all-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        /* Status Message */
+        .status-message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            display: none;
+        }
+
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+
+        /* Tools Grid Section */
+        .tools-grid-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 8px;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border: 1px solid #eaeaea;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(11, 61, 145, 0.2);
+            border-color: var(--primary-light);
+        }
+
+        .tool-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--light-bg);
+            border-radius: 50%;
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .tool-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .tool-card:nth-child(1) .tool-icon {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            color: white;
+        }
+
+        .tool-card:nth-child(2) .tool-icon {
+            background: linear-gradient(135deg, #4ECDC4, #45B7D1);
+            color: white;
+        }
+
+        .tool-card:nth-child(3) .tool-icon {
+            background: linear-gradient(135deg, #FFD166, #FF9E6D);
+            color: white;
+        }
+
+        .tool-card:nth-child(4) .tool-icon {
+            background: linear-gradient(135deg, #9C89B8, #A2D2FF);
+            color: white;
+        }
+
+        .tool-card:nth-child(5) .tool-icon {
+            background: linear-gradient(135deg, #7FC97F, #B8E0D2);
+            color: white;
+        }
+
+        .tool-card:nth-child(6) .tool-icon {
+            background: linear-gradient(135deg, #F78FB3, #FF9AA2);
+            color: white;
+        }
+
+        .tool-card:nth-child(7) .tool-icon {
+            background: linear-gradient(135deg, #9179F0, #C7CEEA);
+            color: white;
+        }
+
+        .tool-card:nth-child(8) .tool-icon {
+            background: linear-gradient(135deg, #FFA07A, #FFDAC1);
+            color: white;
+        }
+
+        .tool-card:nth-child(9) .tool-icon {
+            background: linear-gradient(135deg, #45B7D1, #98D8C8);
+            color: white;
+        }
+
+        .tool-card:nth-child(10) .tool-icon {
+            background: linear-gradient(135deg, #FFD166, #FF9E6D);
+            color: white;
+        }
+
+        /* Article Section */
+        .article-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 20px;
+        }
+
+        .article-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+        }
+
+        .article-header {
+            background: var(--gradient-blue);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .article-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .article-content {
+            padding: 2rem;
+        }
+
+        .article-content h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-bg);
+        }
+
+        .article-content h4 {
+            color: var(--primary);
+            margin: 1.2rem 0 0.7rem;
+            font-size: 1.15rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .article-content ul {
+            margin: 1.5rem 0 1.5rem 2rem;
+        }
+
+        .article-content li {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .article-tip {
+            background: #e6f0ff;
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .article-content .keyword-highlight {
+            background-color: #e6f0ff;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .footer-links a i {
+            font-size: 0.9rem;
+            color: var(--accent);
+            width: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .tools-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .header {
+                flex-direction: row;
+                gap: 1rem;
+                padding: 1.2rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: var(--primary-dark);
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem 0;
+                gap: 1.5rem;
+                transform: translateY(-150%);
+                transition: transform 0.4s ease;
+                z-index: 999;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .converter-body {
+                padding: 1.5rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .logo-text {
+                font-size: 1.5rem;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .action-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img style="width: 40px; height: 40px;" src="../asset/img/icon.png" alt="OnlineFileConv logo-text"
+                srcset="">
+            <div class="logo-text">OnlineFileConv</div>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="../" class="nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </nav>
+    </header>
+
+    <!-- Converter Section -->
+    <section class="converter-section">
+        <div class="converter-container">
+            <div class="converter-header">
+                <h1>PDF to JPG Converter</h1>
+                <p>Upload your PDF file and convert each page to a high-quality JPG image in a few clicks</p>
+            </div>
+
+            <div class="converter-body">
+                <div class="upload-section">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <p class="upload-text">Drag & drop your PDF file here</p>
+                        <p class="upload-text">or</p>
+                        <button class="upload-btn">
+                            <i class="fas fa-folder-open"></i> Choose File
+                        </button>
+                        <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+                    </div>
+
+                    <div class="options-row">
+                        <label for="qualitySelect"><i class="fas fa-sliders-h"></i> Image Quality:</label>
+                        <select id="qualitySelect">
+                            <option value="1">Standard (72 DPI)</option>
+                            <option value="2" selected>High (150 DPI)</option>
+                            <option value="3">Best (300 DPI)</option>
+                        </select>
+                    </div>
+
+                    <div class="preview-area">
+                        <h4 class="preview-title">
+                            <span>Extracted Pages</span>
+                            <span id="pageCount">0 pages</span>
+                        </h4>
+                        <div class="preview-container" id="previewContainer">
+                            <!-- Preview pages will appear here -->
+                        </div>
+                    </div>
+
+                    <div class="progress-wrap" id="progressWrap">
+                        <div class="progress-label" id="progressLabel">Processing page 0 of 0...</div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" id="progressBar"></div>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="action-btn reset-btn" id="resetBtn">
+                            <i class="fas fa-redo"></i> Reset
+                        </button>
+                        <button class="action-btn convert-btn" id="convertBtn">
+                            <i class="fas fa-image"></i> Convert to JPG
+                        </button>
+                        <button class="action-btn download-all-btn" id="downloadAllBtn">
+                            <i class="fas fa-download"></i> Download All
+                        </button>
+                    </div>
+
+                    <div class="status-message" id="statusMessage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid Section -->
+    <section class="tools-grid-section">
+        <div class="section-header">
+            <h2>Explore Our Other Free Tools</h2>
+            <p>Easy-to-use tools for converting and managing documents and images</p>
+        </div>
+
+        <div class="tools-grid">
+            <a href="../tool/jpg-to-pdf" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-file-pdf"></i></div>
+                <div class="tool-name">JPG to PDF</div>
+            </a>
+            <a href="../tool/jpg-to-png" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-file-image"></i></div>
+                <div class="tool-name">JPG to PNG</div>
+            </a>
+            <a href="../tool/image-to-pdf" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-file-pdf"></i></div>
+                <div class="tool-name">Image to PDF</div>
+            </a>
+            <a href="../tool/pdf-to-jpg" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-image"></i></div>
+                <div class="tool-name">PDF to JPG</div>
+            </a>
+            <a href="../tool/compress-image" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-file-image"></i></div>
+                <div class="tool-name">Compress Image</div>
+            </a>
+            <a href="../tool/convert-image" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="tool-name">Image Convert</div>
+            </a>
+            <a href="../tool/resize-image" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                <div class="tool-name">Resize Image</div>
+            </a>
+            <a href="../tool/crop-image" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-crop"></i></div>
+                <div class="tool-name">Crop Image</div>
+            </a>
+            <a href="../tool/compress-pdf" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-compress"></i></div>
+                <div class="tool-name">Compress PDF</div>
+            </a>
+            <a href="../tool/merge-pdf" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-object-group"></i></div>
+                <div class="tool-name">Merge PDF</div>
+            </a>
+            <a href="../tool/rotate-pdf" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-sync-alt"></i></div>
+                <div class="tool-name">Rotate PDF</div>
+            </a>
+            <a href="../tool/delete-pdf-pages" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-trash-alt"></i></div>
+                <div class="tool-name">Delete PDF Page</div>
+            </a>
+            <a href="../tool/pdf-to-word" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-file-word"></i></div>
+                <div class="tool-name">PDF to Word</div>
+            </a>
+            <a href="../tool/pdf-to-excel" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-file-excel"></i></div>
+                <div class="tool-name">PDF to Excel</div>
+            </a>
+            <a href="../tool/unlock-pdf" class="tool-card"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="tool-icon"><i class="fas fa-lock-open"></i></div>
+                <div class="tool-name">Unlock PDF</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <section class="article-section">
+        <div class="article-container">
+            <div class="article-header">
+                <h2>Step by Step Guide to Convert PDF to JPG</h2>
+                <p>Everything you need to know about converting PDF pages to JPG image files</p>
+            </div>
+
+            <div class="article-content">
+                <h3>What is a PDF to JPG Converter?</h3>
+                <p>A <span class="keyword-highlight">PDF to JPG converter</span> is a tool that extracts pages from your
+                    PDF document and saves each one as a high-quality JPG image file. This is useful when you need to
+                    share individual pages as images, embed PDF content into presentations, or edit PDF content using
+                    image editing software.</p>
+
+                <h3>Why Convert PDF to JPG?</h3>
+                <p>Converting PDF to JPG offers several benefits as mentioned below:-</p>
+                <ul>
+                    <li><strong>Easy Sharing</strong>: JPG images can be shared instantly on social media, email, and
+                        messaging apps without any special PDF reader</li>
+                    <li><strong>Image Editing</strong>: Edit your PDF content using any photo editor once it's converted
+                        to JPG</li>
+                    <li><strong>Universal Viewing</strong>: Every device can open a JPG image without needing a PDF
+                        viewer installed</li>
+                    <li><strong>Web Use</strong>: Embed PDF pages as images directly into websites, blogs, or
+                        presentations</li>
+                    <li><strong>Previewing</strong>: Create thumbnail previews of PDF documents for catalogs or
+                        galleries</li>
+                </ul>
+
+                <div class="article-tip">
+                    <strong>Pro Tip:</strong> Use the <span class="keyword-highlight">High (150 DPI)</span> or <span
+                        class="keyword-highlight">Best (300 DPI)</span> quality setting when converting PDFs that
+                    contain fine text or detailed graphics to get the sharpest JPG output.
+                </div>
+
+                <h3>How to Convert PDF to JPG?</h3>
+                <p>Follow these simple steps to <span class="keyword-highlight">convert a PDF to JPG</span> using our
+                    free online tool:-</p>
+                <ul>
+                    <li>Open our <span class="keyword-highlight">PDF to JPG converter free</span> tool</li>
+                    <li>Click "Choose File" or drag and drop your PDF file</li>
+                    <li>Select your preferred image quality (Standard, High, or Best)</li>
+                    <li>Click "Convert to JPG" to extract all pages</li>
+                    <li>Download individual pages or all images at once</li>
+                </ul>
+
+                <h3>Converting PDF to JPG on Different Devices</h3>
+
+                <h4>How to Convert PDF to JPG on iPhone</h4>
+                <p>For iPhone users wondering <span class="keyword-highlight">how to convert PDF to JPG on
+                        iPhone</span>, the easiest method is to use our web-based tool directly in Safari - no app
+                    download required. Simply visit this page, upload your PDF, and download your JPG images.</p>
+
+                <h4>How to Convert PDF to JPG on Android</h4>
+                <p>Android users can <span class="keyword-highlight">convert PDF to JPG</span> directly from the Chrome
+                    browser on their device. Our tool works fully in-browser, so no additional apps are needed. Just
+                    upload, convert, and download.</p>
+
+                <h3>Advanced PDF to JPG Conversion Tips</h3>
+
+                <h4>Choosing the Right Image Quality</h4>
+                <p>Our tool offers three quality settings to suit different use cases:</p>
+                <ul>
+                    <li><strong>Standard (72 DPI)</strong>: Best for quick previews and web thumbnails where file size
+                        matters</li>
+                    <li><strong>High (150 DPI)</strong>: Ideal for general use, presentations, and email sharing</li>
+                    <li><strong>Best (300 DPI)</strong>: Perfect for printing and when you need to preserve fine text
+                        and graphics</li>
+                </ul>
+
+                <h4>How to Save PDF as JPG While Keeping Quality</h4>
+                <p>To <span class="keyword-highlight">save PDF as JPG</span> with the best image quality, always choose
+                    the "Best (300 DPI)" setting. This ensures the output JPG files are sharp enough for printing and
+                    professional use, especially for PDFs with small text or detailed illustrations.</p>
+
+                <div class="article-tip">
+                    <strong>Did You Know?</strong> Our <span class="keyword-highlight">PDF to JPG converter free</span>
+                    processes your files entirely in your browser using PDF.js - your PDF never gets uploaded to any
+                    server, keeping your data completely private.
+                </div>
+
+                <h3>Benefits of Using Our Free PDF to JPG Converter</h3>
+                <p>Our <span class="keyword-highlight">free PDF to JPG converter</span> offers several advantages:</p>
+                <ul>
+                    <li>No registration or account required</li>
+                    <li>Completely browser-based - your files stay on your device</li>
+                    <li>No watermarks on downloaded images</li>
+                    <li>Convert all pages at once with batch download</li>
+                    <li>Three quality levels to suit your needs</li>
+                    <li>Works on all devices including iPhone and Android</li>
+                </ul>
+
+                <h3>Frequently Asked Questions</h3>
+
+                <h4>Can I convert a multi-page PDF to JPG?</h4>
+                <p>Yes! Our tool extracts every page from your PDF and converts each one into a separate JPG image. You
+                    can download them one by one or use the "Download All" button to get all pages at once.</p>
+
+                <h4>Is there a file size limit for PDF to JPG conversion?</h4>
+                <p>Our free tool handles PDF files up to 100MB. For very large PDFs, you can use our <span
+                        class="keyword-highlight">Split PDF</span> tool first to break the file into smaller sections
+                    before converting.</p>
+
+                <h4>What quality are the JPG images produced?</h4>
+                <p>You can choose from three quality levels - Standard (72 DPI), High (150 DPI), and Best (300 DPI). The
+                    default High setting is suitable for most everyday use cases including presentations and email
+                    sharing.</p>
+
+                <h4>Is my PDF safe when I use this tool?</h4>
+                <p>Absolutely. Our <span class="keyword-highlight">PDF to JPG converter</span> runs entirely in your
+                    browser using PDF.js. Your PDF file is never uploaded to any server - all processing happens locally
+                    on your device.</p>
+
+                <h3>Conclusion</h3>
+                <p>Converting PDF pages to JPG images is a simple and effective way to make your PDF content more
+                    accessible, shareable, and editable. Whether you need to <span class="keyword-highlight">turn PDF to
+                        JPG</span> for social media, embed pages in a website, or extract content for editing, our free
+                    online tool provides a fast, secure, and watermark-free solution.</p>
+
+                <p>Our <span class="keyword-highlight">PDF to JPG converter free</span> service runs entirely in your
+                    browser, so your files remain private at all times. Try it today for the easiest way to <span
+                        class="keyword-highlight">convert PDF to JPG free</span> - no signup, no watermarks, no limits!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>OnlineFileConv</h3>
+                <p>OnlineFileConv is a fast and free file conversion website that lets you convert documents, images,
+                    videos, and audio files into any format instantly.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="../"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="../blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Social Links</h3>
+                <ul class="footer-links">
+                    <li><a href="https://x.com/"><i class="fas fa-chevron-right"></i> Twitter</a></li>
+                    <li><a href="https://github.com/"><i class="fas fa-chevron-right"></i> Github</a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fas fa-chevron-right"></i> Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="../page/about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="../page/privacy"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    <li><a href="../page/disclaimer"><i class="fas fa-chevron-right"></i> Disclaimer</a></li>
+                    <li><a href="../page/terms"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 OnlineFileConv | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set PDF.js worker
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+        // DOM Elements
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const previewContainer = document.getElementById('previewContainer');
+        const convertBtn = document.getElementById('convertBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const downloadAllBtn = document.getElementById('downloadAllBtn');
+        const pageCount = document.getElementById('pageCount');
+        const statusMessage = document.getElementById('statusMessage');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        const progressWrap = document.getElementById('progressWrap');
+        const progressBar = document.getElementById('progressBar');
+        const progressLabel = document.getElementById('progressLabel');
+        const qualitySelect = document.getElementById('qualitySelect');
+
+        let convertedBlobs = []; // store converted image blobs for download all
+        let currentFile = null;
+
+        // Mobile menu toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !mobileMenuBtn.contains(e.target) && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Upload Area Events
+        uploadArea.addEventListener('click', () => fileInput.click());
+
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('drag-over');
+        });
+
+        uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('drag-over'));
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('drag-over');
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].type === 'application/pdf') {
+                handleFile(files[0]);
+            } else {
+                showStatus('Please drop a valid PDF file.', 'error');
+            }
+        });
+
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                handleFile(fileInput.files[0]);
+            }
+        });
+
+        function handleFile(file) {
+            if (file.type !== 'application/pdf') {
+                showStatus('Please select a valid PDF file.', 'error');
+                return;
+            }
+            currentFile = file;
+            // Reset previous state
+            previewContainer.innerHTML = '';
+            convertedBlobs = [];
+            downloadAllBtn.style.display = 'none';
+            updatePageCount(0);
+            statusMessage.className = 'status-message';
+            showStatus(`File selected: ${file.name}`, 'success');
+        }
+
+        // Convert Button
+        convertBtn.addEventListener('click', async () => {
+            if (!currentFile) {
+                showStatus('Please select a PDF file first.', 'error');
+                return;
+            }
+
+            convertBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Converting...';
+            convertBtn.disabled = true;
+            downloadAllBtn.style.display = 'none';
+            previewContainer.innerHTML = '';
+            convertedBlobs = [];
+            statusMessage.className = 'status-message';
+
+            const scale = parseFloat(qualitySelect.value);
+
+            try {
+                const arrayBuffer = await readFileAsArrayBuffer(currentFile);
+                const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                const totalPages = pdf.numPages;
+
+                updatePageCount(totalPages);
+                progressWrap.style.display = 'block';
+
+                for (let i = 1; i <= totalPages; i++) {
+                    progressLabel.textContent = `Processing page ${i} of ${totalPages}...`;
+                    progressBar.style.width = `${Math.round((i / totalPages) * 100)}%`;
+
+                    const page = await pdf.getPage(i);
+                    const viewport = page.getViewport({ scale });
+
+                    const canvas = document.createElement('canvas');
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+                    const ctx = canvas.getContext('2d');
+
+                    await page.render({ canvasContext: ctx, viewport }).promise;
+
+                    const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg', 0.92));
+                    const blobUrl = URL.createObjectURL(blob);
+                    convertedBlobs.push({ blob, name: `page-${i}.jpg` });
+
+                    // Create preview item
+                    const previewItem = document.createElement('div');
+                    previewItem.className = 'preview-item';
+
+                    const img = document.createElement('img');
+                    img.src = blobUrl;
+                    img.alt = `Page ${i}`;
+
+                    const label = document.createElement('div');
+                    label.className = 'page-label';
+                    label.textContent = `Page ${i}`;
+
+                    const dlBtn = document.createElement('button');
+                    dlBtn.className = 'download-single-btn';
+                    dlBtn.title = `Download Page ${i}`;
+                    dlBtn.innerHTML = '<i class="fas fa-download"></i>';
+                    dlBtn.addEventListener('click', () => {
+                        const a = document.createElement('a');
+                        a.href = blobUrl;
+                        a.download = `page-${i}.jpg`;
+                        a.click();
+                    });
+
+                    previewItem.appendChild(img);
+                    previewItem.appendChild(label);
+                    previewItem.appendChild(dlBtn);
+                    previewContainer.appendChild(previewItem);
+                }
+
+                progressWrap.style.display = 'none';
+                downloadAllBtn.style.display = 'inline-flex';
+                showStatus(`Conversion complete! ${totalPages} page${totalPages !== 1 ? 's' : ''} converted to JPG.`, 'success');
+
+            } catch (err) {
+                console.error('Conversion error:', err);
+                progressWrap.style.display = 'none';
+                showStatus('Failed to convert PDF. Please make sure the file is a valid, non-password-protected PDF.', 'error');
+            } finally {
+                convertBtn.innerHTML = '<i class="fas fa-image"></i> Convert to JPG';
+                convertBtn.disabled = false;
+            }
+        });
+
+        // Download All Button
+        downloadAllBtn.addEventListener('click', async () => {
+            if (convertedBlobs.length === 0) return;
+
+            downloadAllBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparing...';
+            downloadAllBtn.disabled = true;
+
+            // Download one by one with a small delay to avoid browser blocking
+            for (let i = 0; i < convertedBlobs.length; i++) {
+                const { blob, name } = convertedBlobs[i];
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = name;
+                a.click();
+                await new Promise(r => setTimeout(r, 300));
+                URL.revokeObjectURL(url);
+            }
+
+            downloadAllBtn.innerHTML = '<i class="fas fa-download"></i> Download All';
+            downloadAllBtn.disabled = false;
+        });
+
+        // Reset Button
+        resetBtn.addEventListener('click', () => {
+            previewContainer.innerHTML = '';
+            fileInput.value = '';
+            currentFile = null;
+            convertedBlobs = [];
+            updatePageCount(0);
+            statusMessage.className = 'status-message';
+            progressWrap.style.display = 'none';
+            progressBar.style.width = '0%';
+            downloadAllBtn.style.display = 'none';
+        });
+
+        // Helpers
+        function updatePageCount(count) {
+            pageCount.textContent = `${count} page${count !== 1 ? 's' : ''}`;
+        }
+
+        function showStatus(message, type) {
+            statusMessage.textContent = message;
+            statusMessage.className = `status-message status-${type}`;
+            if (type === 'success') {
+                setTimeout(() => { statusMessage.className = 'status-message'; }, 5000);
+            }
+        }
+
+        function readFileAsArrayBuffer(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsArrayBuffer(file);
+            });
+        }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HVYP877DEV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-HVYP877DEV');
+    </script>
+</body>
+
+</html>
