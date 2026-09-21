@@ -1,117 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.onlinefileconv.com/</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/jpg-to-pdf</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/jpg-to-png</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/image-to-pdf</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/pdf-to-jpg</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/compress-image</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/convert-image</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/resize-image</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/crop-image</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/compress-pdf</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/merge-pdf</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/rotate-pdf</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/delete-pdf-pages</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/pdf-to-word</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/pdf-to-excel</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/tool/unlock-pdf</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/page/about</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/page/privacy</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/page/disclaimer</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/page/terms</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.onlinefileconv.com/blog</loc>
-  <lastmod>2026-04-04T12:27:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://www.onlinefileconv.com/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/pdf-tools</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/image-tools</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/blog/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/merge-pdf</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/split-pdf</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/compress-pdf</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/rotate-pdf</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/delete-pdf-pages</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/add-page-numbers</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/watermark-pdf</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/pdf-to-jpg</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/pdf-to-png</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/pdf-to-word</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/pdf-to-excel</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/pdf-to-text</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/jpg-to-pdf</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/png-to-pdf</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/image-to-pdf</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/compress-image</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/resize-image</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/crop-image</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/rotate-image</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/convert-image</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/jpg-to-png</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/png-to-jpg</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/webp-to-jpg</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/webp-to-png</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/tool/jpg-to-webp</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/blog/compress-image-to-100kb</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/blog/merge-pdf-files-free</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/blog/jpg-vs-png-vs-webp</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/blog/convert-jpg-to-pdf-iphone-android</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/blog/reduce-pdf-size-for-email</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/blog/are-online-file-converters-safe</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/blog/pdf-to-word-excel-text</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/page/about</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/page/contact</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/page/privacy</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/page/terms</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://www.onlinefileconv.com/page/disclaimer</loc><lastmod>2026-09-21</lastmod></url>
 </urlset>
